@@ -44,7 +44,10 @@
     "prepack": "npm run build",
     "size": "npm pack --dry-run",
     "size:check": "npm run build && npm pack --dry-run 2>&1 | grep -E 'package size|unpacked size'",
-    "analyze": "npm run build && find dist -name '*.js' -exec wc -c {} + | sort -n"
+    "analyze": "npm run build && find dist -name '*.js' -exec wc -c {} + | sort -n",
+    "validate": "npm run lint && npm run typecheck",
+    "publish:dry-run": "npm publish --dry-run",
+    "release": "npm run validate && npm run build && npm publish"
   },
   "keywords": [
     "nestjs",
