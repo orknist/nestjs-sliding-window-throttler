@@ -1,0 +1,214 @@
+/* Custom TypeDoc styles for nestjs-sliding-window-throttler */
+
+:root {
+  --color-primary: #e53e3e;
+  --color-primary-light: #fc8181;
+  --color-primary-dark: #c53030;
+  --color-secondary: #3182ce;
+  --color-accent: #38a169;
+  --color-warning: #d69e2e;
+}
+
+/* Header customization */
+.tsd-page-title {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary-light);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation improvements */
+.tsd-navigation a {
+  transition: color 0.2s ease;
+}
+
+.tsd-navigation a:hover {
+  color: var(--color-primary);
+}
+
+.tsd-navigation .current {
+  background-color: var(--color-primary-light);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Code blocks */
+.tsd-signature {
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.tsd-signature-type {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* Method and property styling */
+.tsd-kind-method .tsd-signature {
+  border-left: 4px solid var(--color-accent);
+}
+
+.tsd-kind-property .tsd-signature {
+  border-left: 4px solid var(--color-secondary);
+}
+
+.tsd-kind-interface .tsd-signature {
+  border-left: 4px solid var(--color-primary);
+}
+
+/* Tags and badges */
+.tsd-tag {
+  background-color: var(--color-primary-light);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.tsd-tag.ts-flagOptional {
+  background-color: var(--color-warning);
+}
+
+.tsd-tag.ts-flagReadonly {
+  background-color: var(--color-secondary);
+}
+
+/* Improve readability */
+.tsd-comment {
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.tsd-comment p {
+  margin-bottom: 0.8rem;
+}
+
+/* Example code blocks */
+.tsd-comment pre {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.tsd-comment code {
+  background-color: #edf2f7;
+  color: #2d3748;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Parameter lists */
+.tsd-parameters {
+  margin: 1rem 0;
+}
+
+.tsd-parameter {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f7fafc;
+  border-radius: 4px;
+}
+
+.tsd-parameter-name {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+/* Return type styling */
+.tsd-returns-title {
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: 1rem;
+}
+
+/* Hierarchy improvements */
+.tsd-hierarchy {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 6px;
+  border-left: 4px solid var(--color-primary);
+}
+
+/* Index page improvements */
+.tsd-index-panel .tsd-index-content {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.tsd-index-section {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+.tsd-index-heading {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-primary-light);
+  padding-bottom: 0.25rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .tsd-index-panel .tsd-index-content {
+    columns: 1;
+  }
+  
+  .tsd-signature {
+    padding: 0.75rem;
+    font-size: 0.9em;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .tsd-signature {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .tsd-parameter {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  .tsd-hierarchy {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  .tsd-comment code {
+    background-color: #4a5568;
+    color: #e2e8f0;
+  }
+}
+
+/* Print styles */
+@media print {
+  .tsd-navigation,
+  .tsd-page-toolbar {
+    display: none;
+  }
+  
+  .tsd-signature {
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+  
+  .tsd-comment pre {
+    background-color: #f5f5f5;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+}

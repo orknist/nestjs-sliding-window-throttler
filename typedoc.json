@@ -1,0 +1,66 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "dist/docs",
+  "theme": "default",
+  "name": "NestJS Sliding Window Throttler",
+  "readme": "README.md",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeExternals": true,
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Storage",
+    "Configuration",
+    "Redis",
+    "Errors",
+    "Types",
+    "Utilities",
+    "*"
+  ],
+  "sort": ["source-order"],
+  "kindSortOrder": [
+    "Class",
+    "Constructor",
+    "Property",
+    "Method",
+    "Function",
+    "Interface",
+    "TypeAlias",
+    "Variable",
+    "Enum"
+  ],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true
+  },
+  "plugin": [],
+  "gitRevision": "main",
+  "gitRemote": "origin",
+  "hideGenerator": false,
+  "searchInComments": true,
+  "validation": {
+    "notExported": true,
+    "invalidLink": true,
+    "notDocumented": false
+  },
+  "treatWarningsAsErrors": false,
+  "logLevel": "Info",
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/coverage/**",
+    "**/docs/**"
+  ],
+  "externalPattern": [
+    "**/node_modules/**"
+  ],
+  "excludeNotDocumented": false,
+  "excludeInternal": true,
+  "disableSources": false,
+  "sourceLinkTemplate": "https://github.com/orknist/nestjs-sliding-window-throttler/blob/{gitRevision}/{path}#L{line}",
+  "customCss": "./docs/typedoc-custom.css"
+}

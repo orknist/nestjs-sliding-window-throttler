@@ -1,0 +1,51 @@
+# Source files (keep only compiled dist)
+src/
+tests/
+docs/
+
+# Exclude most examples (keep only essential ones in files array)
+examples/advanced-config/
+examples/block-duration/
+examples/configuration-validation/
+examples/error-handling/
+examples/logger-interface/
+examples/migration-guide/
+
+# Configuration files
+.eslintrc.js
+.prettierrc
+jest.config.js
+jest.integration.config.js
+jest.e2e.config.js
+jest.setup.ts
+tsconfig.json
+tsconfig.dev.json
+typedoc.json
+
+# Development files
+.gitignore
+.env*
+*.log
+coverage/
+.jest-cache/
+.jest-cache-*/
+node_modules/
+.kiro/
+
+# Build artifacts (keep only essential dist files)
+dist/.tsbuildinfo
+dist/**/*.js.map
+dist/**/*.d.ts.map
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
