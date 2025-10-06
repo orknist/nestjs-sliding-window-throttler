@@ -3,7 +3,6 @@
 [![npm version](https://badge.fury.io/js/nestjs-sliding-window-throttler.svg)](https://badge.fury.io/js/nestjs-sliding-window-throttler)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
-[![Node.js CI](https://github.com/orknist/nestjs-sliding-window-throttler/workflows/Node.js%20CI/badge.svg)](https://github.com/orknist/nestjs-sliding-window-throttler/actions)
 
 A simplified, production-ready sliding window rate limiter for NestJS applications using Redis Functions. Focused on core functionality with clean, maintainable code.
 
