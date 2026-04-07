@@ -1,7 +1,7 @@
 {
   "name": "nestjs-sliding-window-throttler",
-  "version": "1.0.0",
-  "description": "High-performance sliding window rate limiter for NestJS using Redis Functions",
+  "version": "1.0.1",
+  "description": "True sliding window rate limiter for NestJS with precise timestamp-based tracking using Redis Functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -10,6 +10,7 @@
     "README.md",
     "LICENSE",
     "CHANGELOG.md",
+    "docs/**/*.md",
     "examples/basic-usage/**/*",
     "examples/opentelemetry-integration/**/*",
     "examples/custom-observability/**/*"
@@ -56,7 +57,12 @@
     "redis",
     "sliding-window",
     "rate-limiter",
-    "typescript"
+    "typescript",
+    "high-performance",
+    "redis-functions",
+    "atomic-operations",
+    "true-sliding-window",
+    "precise-rate-limiting"
   ],
   "author": "Orkun <orkun@email.com>",
   "license": "MIT",
